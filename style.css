@@ -1,0 +1,163 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
+
+* {
+   box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+ }
+ 
+ h2, h3 {
+    color: #00a2c6
+ }
+
+ main{
+   padding: 20px;
+   overflow: auto;
+ }
+  
+ footer {
+    padding: 20px;
+    color: white;
+    background-color: #00a2c6;
+    text-align: center;
+    font-weight: bold;
+ }
+
+ a:hover {
+    color: blue;
+ }
+ 
+ h1 {
+    font-size: 1.5em;
+ }
+
+ p {
+    font: 1em sans-serif;
+    line-height: 2;
+ }
+
+/* Nav */
+nav{
+background-color: #00a2c6;
+padding: 5px;
+position: sticky;
+top: 0;
+}
+
+nav a {
+font-size: 18px;
+font-weight: 400;
+text-decoration: none;
+color: whitesmoke;
+}
+
+nav a:hover {
+font-weight: bold;
+}
+
+nav li {
+display: inline;
+list-style-type: none;
+margin-right: 20px;
+}
+
+nav ul {
+font-size: 0;
+margin: 0;
+padding: 0;
+}
+   
+nav ul li {
+display: inline-block;
+position: sticky;
+}
+   
+nav ul li a {
+color: white;
+font-family: 'Merriweather', serif;
+font-weight: bold;
+display: block;
+font-size: 18px;
+padding: 15px 14px;
+/*transition: 0.3s linear;*/
+}
+   
+nav ul li ul {
+display: none;
+position: absolute;
+width: 250px;
+}
+   
+nav ul li ul li {
+display: block;
+}
+   
+nav ul li ul li a {
+background: #00a2c6;
+display: block;
+padding: 10px 14px;
+}
+
+ header {
+   display: inline;
+}
+
+ .profile header {
+    text-align: center;
+ }
+
+ /* style ukuran gambar*/
+ .profile img {
+   width: 200px;
+}
+
+ .feature-image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+ }
+
+ /* style card article*/
+ .card{
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+   border-radius: 5px;
+   padding: 20px;
+   margin-top: 20px;
+ }
+
+ /*Jumbotron */
+ .jumbotron{
+   font-size: 20px;
+   padding: 60px;
+   background-image:url('assets/Landscape.jpg');
+   background-size: cover;
+   text-align: center;
+   color:black;
+ }
+
+/*Float*/
+#content{
+   float: left;
+   width: 75%;
+}
+
+aside {
+   float: right;
+   width: 25%;
+   padding-left: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+   #content,
+   aside {
+       width: 100%;
+       padding: 0;
+   }
+}
